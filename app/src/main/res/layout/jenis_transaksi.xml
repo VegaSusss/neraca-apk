@@ -1,43 +1,68 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
     <TextView
-        android:id="@+id/nama_barang"
+        android:id="@+id/jenisTransaksiLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama"
-        android:textSize="18sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp" />
+        android:text="Jenis Transaksi"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/jenisTransaksiSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jenisTransaksiLabel"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff" />
 
     <TextView
-        android:id="@+id/nominal_barang"
+        android:id="@+id/waktuTransaksiLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rp0"
-        android:textSize="16sp"
-        android:layout_below="@id/nama_barang"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_below="@id/jenisTransaksiSpinner"
+        android:layout_marginTop="16dp"
+        android:text="Tanggal Transaksi"
+        android:textSize="16sp" />
 
     <Button
-        android:id="@+id/button_kiri"
+        android:id="@+id/waktuTransaksiButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waktuTransaksiLabel"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:text="Pilih Tanggal" />
+
+    <TextView
+        android:id="@+id/keteranganTransaksiLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="&lt;&lt;"
-        android:onClick="GeserKiri"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="16dp" />
+        android:layout_below="@id/waktuTransaksiButton"
+        android:layout_marginTop="16dp"
+        android:text="Keterangan Transaksi"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/keteranganTransaksiInput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/keteranganTransaksiLabel"
+        android:layout_marginTop="8dp"
+        android:gravity="top"
+        android:hint="Masukkan keterangan"
+        android:background="#ffffff"
+        android:inputType="textMultiLine" />
 
     <Button
-        android:id="@+id/button_kanan"
-        android:layout_width="wrap_content"
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="&gt;&gt;"
-        android:onClick="GeserKanan"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="16dp" />
+        android:text="Lanjut"
+        android:onClick="goToObjekTransaksi"
+        android:textColor="#fff"
+        android:background="#0052a5" />
 </RelativeLayout>
