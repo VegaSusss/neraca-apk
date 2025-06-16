@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity; // Ganti support.v7
 
 import com.example.user.test.R;
 
-public class MainActivity extends AppCompatActivity { // Ganti ActionBarActivity
+public class MainActivity extends AppCompatActivity { // Ganti  AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
