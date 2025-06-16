@@ -6,7 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.provider.MediaStore;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app. AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,7 +21,7 @@ import com.example.user.test.R;
 
 import java.util.ArrayList;
 
-public class PembelianActivity extends ActionBarActivity implements View.OnClickListener {
+public class PembelianActivity extends  AppCompatActivity implements View.OnClickListener {
 
     DBHelper mydb;
     String jenisTransaksi;
