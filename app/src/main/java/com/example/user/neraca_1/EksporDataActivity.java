@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app. AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,7 +18,7 @@ import com.opencsv.CSVWriter;
 import java.io.File;
 import java.io.FileWriter;
 
-public class EksporDataActivity extends ActionBarActivity {
+public class EksporDataActivity extends  AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
