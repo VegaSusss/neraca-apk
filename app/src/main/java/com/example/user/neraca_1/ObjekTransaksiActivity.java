@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app. AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,7 +22,7 @@ import com.example.user.test.R;
 
 import java.util.ArrayList;
 
-public class ObjekTransaksiActivity extends ActionBarActivity implements View.OnClickListener {
+public class ObjekTransaksiActivity extends  AppCompatActivity implements View.OnClickListener {
 
     DBHelper mydb;
     String jenisTransaksi;
