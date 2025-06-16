@@ -11,26 +11,29 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name="com.example.user.neraca_1.SplashScreen"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="com.example.user.neraca_1.MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.example.user.neraca_1.MAINACTIVITY" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="com.example.user.neraca_1.JenisTransaksiActivity"
             android:label="@string/app_name"
@@ -52,7 +55,8 @@
         <activity
             android:name="com.example.user.neraca_1.PengingatActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.example.user.neraca_1.EksporDataActivity"
+        <activity 
+            android:name="com.example.user.neraca_1.EksporDataActivity"
             android:screenOrientation="portrait" />
     </application>
 
